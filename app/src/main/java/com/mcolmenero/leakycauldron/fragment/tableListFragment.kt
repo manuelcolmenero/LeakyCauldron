@@ -29,8 +29,8 @@ class tableListFragment : Fragment() {
     }
 
     // Declaración de variables
-    lateinit var root: View
-    lateinit var list: ListView
+    private lateinit var root: View
+    private lateinit var list: ListView
 
     // Declaración del objeto delegado
     private var onTableSelectedListener: OnTableSelectedListener? = null
@@ -43,7 +43,7 @@ class tableListFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         if (inflater != null) {
             root = inflater.inflate(R.layout.fragment_table_list, container, false)
-            list = root.findViewById<ListView>(R.id.table_list)
+            list = root.findViewById(R.id.table_list)
 
             //adapter
             list.adapter = ListAdapter(activity)
@@ -51,7 +51,7 @@ class tableListFragment : Fragment() {
             // Nos enteramos de que se ha pulsado un elemento de la lista así:
             list.setOnItemClickListener { parent, view, position, id ->
                 // Aviso al listener
-                onTableSelectedListener?.onTableSelected(Tables.get(position), position)
+                onTableSelectedListener?.onTableSelected(Tables[position], position)
 
 
             }
@@ -87,7 +87,7 @@ class tableListFragment : Fragment() {
         onTableSelectedListener = null
     }
 
-    fun commonAttach(listener: Any?) {
+    private fun commonAttach(listener: Any?) {
         if (listener is OnTableSelectedListener) {
             onTableSelectedListener = listener
         }
@@ -117,7 +117,7 @@ class tableListFragment : Fragment() {
             }
 
             //asignamos a la vista los calores
-            vh.tituloMenu.text = Tables[position].name
+            vh.titleCell.text = Tables[position].name
 
             return view!!
 
@@ -133,12 +133,12 @@ class tableListFragment : Fragment() {
 
         //Clase Holder
         internal class ListRowHolder(row: View?) {
-            public val tituloMenu: TextView
+            public val titleCell: TextView
 
 
             init {
 
-                tituloMenu = row?.findViewById<TextView>(R.id.txtTituloMesa)!!
+                titleCell = row?.findViewById(R.id.txtTitleCell)!!
 
             }
         }

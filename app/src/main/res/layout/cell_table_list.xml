@@ -3,18 +3,49 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/txtTituloMesa"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="TextView"
-        android:textAlignment="center"
-        android:textSize="24sp"
+    <ImageView
+        android:id="@+id/imageCell"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/heigthCell"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/textImageCell"
+        android:scaleType="center"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tables" />
+
+    <ImageView
+        android:id="@+id/imageDegraded"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        android:alpha="0.6"
+        android:contentDescription="@string/textTitleCell"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/imageCell"
+        app:layout_constraintEnd_toEndOf="@+id/imageCell"
+        app:layout_constraintStart_toStartOf="@+id/imageCell"
+        app:layout_constraintTop_toTopOf="@+id/imageCell"
+        app:srcCompat="@android:color/black" />
+
+    <TextView
+        android:id="@+id/txtTitleCell"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/textTitleCell"
+        android:shadowColor="@android:color/background_dark"
+        android:shadowDx="2"
+        android:shadowDy="1"
+        android:text="@string/textTitleCell"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="@dimen/fontTitleSize"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageDegraded"
+        app:layout_constraintEnd_toEndOf="@+id/imageDegraded"
+        app:layout_constraintStart_toStartOf="@+id/imageDegraded"
+        app:layout_constraintTop_toTopOf="@+id/imageDegraded" />
 
 </android.support.constraint.ConstraintLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="detaultmargin">16dp</dimen>
+
+    <dimen name="fontTitleSize">30sp</dimen>
+
+    <dimen name="heigthCell">150dp</dimen>
+
+</resources>
