@@ -1,7 +1,8 @@
-package com.mcolmenero.leakycauldron
+package com.mcolmenero.leakycauldron.activity
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import com.mcolmenero.leakycauldron.R
 
 class MainActivity : AppCompatActivity() {
 
