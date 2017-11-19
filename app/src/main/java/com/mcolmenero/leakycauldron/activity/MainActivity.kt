@@ -2,12 +2,14 @@ package com.mcolmenero.leakycauldron.activity
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import android.view.View
 import com.mcolmenero.leakycauldron.R
+import com.mcolmenero.leakycauldron.fragment.tableDetailFragment
 import com.mcolmenero.leakycauldron.fragment.tableListFragment
 import com.mcolmenero.leakycauldron.model.Table
 import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity(), tableListFragment.OnTableSelectedListener {
+class MainActivity : AppCompatActivity(), tableListFragment.OnTableSelectedListener, tableDetailFragment.OnDetailSelectedListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,9 +27,8 @@ class MainActivity : AppCompatActivity(), tableListFragment.OnTableSelectedListe
 
     // Cuando se pulsa en una de las mesas se lanza este evento para navegar al detalle
     override fun onTableSelected(table: Table?, position: Int) {
-        this.setTitle("Gestionando Mesa  ${position}")
 
-        /* val fragment = tableDetailFragment.newInstance(position)
+         val fragment = tableDetailFragment.newInstance(position)
 
          // Es tablet
          if (findViewById<View>(R.id.table_detail) != null) {
@@ -39,6 +40,21 @@ class MainActivity : AppCompatActivity(), tableListFragment.OnTableSelectedListe
                      .replace(R.id.table_list_fragment, fragment)
                      .addToBackStack("")
                      .commit()
-         }*/
+         }
     }
+
+    // Función que se ejecuta cuando se pulsa el botón flotante en la lista para añadir productos.
+    override fun onAddproduct(tablePos : Int) {
+
+        this.setTitle("Se pulsa en la mesa  ${tablePos}")
+
+        //lanzamos una actividad
+        /*
+        val intent = productsListActivity.intent(this, tablePos)
+        startActivity(intent)
+
+        */
+
+    }
+
 }
