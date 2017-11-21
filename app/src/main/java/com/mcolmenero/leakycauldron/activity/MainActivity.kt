@@ -46,14 +46,11 @@ class MainActivity : AppCompatActivity(), tableListFragment.OnTableSelectedListe
     // Función que se ejecuta cuando se pulsa el botón flotante en la lista para añadir productos.
     override fun onAddproduct(tablePos : Int) {
 
-        this.setTitle("Se pulsa en la mesa  ${tablePos}")
+      //lanzamos una actividad
 
-        //lanzamos una actividad
-        /*
-        val intent = productsListActivity.intent(this, tablePos)
+        val intent = dishListActivity.intent(this, tablePos)
         startActivity(intent)
 
-        */
 
     }
 

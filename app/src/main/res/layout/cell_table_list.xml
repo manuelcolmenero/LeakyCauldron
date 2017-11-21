@@ -21,7 +21,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:adjustViewBounds="true"
-        android:alpha="0.6"
+        android:alpha="0.35"
         android:contentDescription="@string/textTitleCell"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="@+id/imageCell"
