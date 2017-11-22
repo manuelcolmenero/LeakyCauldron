@@ -39,7 +39,7 @@ class dishListActivity : AppCompatActivity() {
 
 
         //demo
-        Tables[tablepos].dish.add(0, Dish("Cerveza", R.drawable.cerveza, 10.45f, "Cerveza de mantequilla", ""))
+        //Tables[tablepos].dish.add(0, Dish("Cerveza", R.drawable.cerveza, 10.45f, "Cerveza de mantequilla", ""))
 
 
     }

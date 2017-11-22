@@ -7,27 +7,22 @@ data class Dish(
         val image: Int,
         val price: Float,
         val description: String,
-     //   val allergen: List<Int>,
+        val alg_gluten : Int,
+        val alg_crustaceos : Int,
+        val alg_huevo : Int,
+        val alg_pescado : Int,
+        val alg_cacahuete : Int,
+        val alg_soja : Int,
+        val alg_leche : Int,
+        val alg_frutsecos : Int,
+        val alg_apio : Int,
+        val alg_mostaza : Int,
+        val alg_sesamo : Int,
+        val alg_sulfitos : Int,
+        val alg_altramuces : Int,
+        val alg_moluscos : Int,
         val variant: String
     ) : Serializable {
-
-    // enum de los tipos de alergenos que existen
-    enum class AllergenType {
-        ALTRAMUCES,
-        APIO,
-        AZUFRE,
-        CACAHUETE,
-        CRUSTACEO,
-        FRUTOS,
-        GLUTEN,
-        HUEVO,
-        LACTEO,
-        MOLUSCOS,
-        MOSTAZA,
-        PESCADO,
-        SESAMO,
-        SOJA
-    }
 
     // Validador del precio
     init {
