@@ -2,9 +2,17 @@
 <resources>
 
     <dimen name="detaultmargin">16dp</dimen>
+    <dimen name="detaultmargininter">8dp</dimen>
 
     <dimen name="fontTitleSize">30sp</dimen>
 
     <dimen name="heigthCell">150dp</dimen>
+
+    <dimen name="imageDishListSize">100dp</dimen>
+
+    <dimen name="maxHeightAlergen">25dp</dimen>
+    <dimen name="maxWidthAlergen">25dp</dimen>
+    <dimen name="minHeightAlergen">25dp</dimen>
+    <dimen name="minWidthAlergen">25dp</dimen>
 
 </resources>

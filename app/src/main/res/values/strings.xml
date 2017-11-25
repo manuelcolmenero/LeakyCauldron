@@ -3,4 +3,6 @@
 
     <string name="textTitleCell">Titulo de la celda</string>
     <string name="textImageCell">Imagen de la celda</string>
+    <string name="textPriceCell">9999.99 €</string>
+
 </resources>

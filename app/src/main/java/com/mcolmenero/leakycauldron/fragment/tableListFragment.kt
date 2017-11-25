@@ -94,6 +94,9 @@ class tableListFragment : Fragment() {
         // En caso de existir datos se carga la lista de mesas
         if (dishes.count() != 0) {
 
+            // Se carga la lista de mesas
+            viewSwitcher.displayedChild = VIEW_INDEX.TABLES.index //Se cambia vista al principal que es la lista de mesas
+
             // Se lanza el listado
             list.adapter = ListAdapter(activity)
             return
@@ -183,7 +186,7 @@ class tableListFragment : Fragment() {
 
                 //añado al singleton
                 addDish(name,
-                        image,
+                        iconResource,
                         price,
                         description,
                         alg_gluten,

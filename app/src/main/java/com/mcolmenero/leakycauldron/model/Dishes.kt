@@ -1,10 +1,90 @@
 package com.mcolmenero.leakycauldron.model
 
+import com.mcolmenero.leakycauldron.R
+
 
 object Dishes {
 
     // Se crea e inicializa la lista de platos
-    val dishes: MutableList<Dish> = arrayListOf()
+    val dishes: MutableList<Dish> = arrayListOf(
+//            Dish("Cerveza", R.drawable.cerveza,
+//                    1.5f,
+//                    "Cerveza",
+//                    0,
+//                    0,
+//                    0,
+//                    0,
+//                    0,
+//                    0,
+//                    0,
+//                    0,
+//                    0,
+//                    0,
+//                    0,
+//                    0,
+//                    0,
+//                    0,
+//                    ""
+//            ),
+//            Dish("pollo", R.drawable.pollo,
+//                    2.5f,
+//                    "pollo",
+//                    0,
+//                    0,
+//                    0,
+//                    0,
+//                    0,
+//                    0,
+//                    0,
+//                    0,
+//                    0,
+//                    0,
+//                    0,
+//                    0,
+//                    0,
+//                    0,
+//                    ""
+//            ),
+//            Dish("salmon", R.drawable.salmon,
+//                    3.5f,
+//                    "salmon",
+//                    0,
+//                    0,
+//                    0,
+//                    0,
+//                    0,
+//                    0,
+//                    0,
+//                    0,
+//                    0,
+//                    0,
+//                    0,
+//                    0,
+//                    0,
+//                    0,
+//                    ""
+//            ),
+//            Dish("Hamburguesa", R.drawable.hamburguesa,
+//                    1.5f,
+//                    "Hamburguesa",
+//                    0,
+//                    0,
+//                    0,
+//                    0,
+//                    0,
+//                    0,
+//                    0,
+//                    0,
+//                    0,
+//                    0,
+//                    0,
+//                    0,
+//                    0,
+//                    0,
+//                    ""
+//            )
+
+    )
 
     // Propiedad para saber el número de objetos que posee
     val count
