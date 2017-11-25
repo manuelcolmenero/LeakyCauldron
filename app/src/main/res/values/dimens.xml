@@ -6,7 +6,7 @@
 
     <dimen name="fontTitleSize">30sp</dimen>
 
-    <dimen name="heigthCell">150dp</dimen>
+    <dimen name="heigthCell">100dp</dimen>
 
     <dimen name="imageDishListSize">100dp</dimen>
 
