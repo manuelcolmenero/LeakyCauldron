@@ -22,6 +22,4 @@ object Tables : Serializable{
         get() = tables.size
 
     operator fun  get(index: Int) = tables[index]
-
-    fun toArray() = tables.toTypedArray()
 }

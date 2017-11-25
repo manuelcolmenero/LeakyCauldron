@@ -50,10 +50,10 @@ class dishDetailActivity : AppCompatActivity() {
         addDishDetail.setOnClickListener {
             // Se añade el menu a la mesa
             val table = Tables[tablepos]
-            val dishToAdd = Dishes.getDishItem(dishpos)
+            val dishToAdd = Dishes.getDish(dishpos)
             val variantClient = variantsDishDetail.text.toString()
 
-            table.dish.add(0,
+            table.dishes.add(0,
                     Dish(dishToAdd.name,
                             dishToAdd.image,
                             dishToAdd.price,
@@ -80,10 +80,10 @@ class dishDetailActivity : AppCompatActivity() {
     }
 
     private fun formatDetail() {
-        nameDetailDish.text = Dishes.getDishItem(dishpos).name
-        imageDetailDish.setImageResource(Dishes.getDishItem(dishpos).image)
-        priceDishDetail.text = Dishes.getDishItem(dishpos).price.toString() + " €"
-        descriptionDetailDish.text = Dishes.getDishItem(dishpos).description
+        nameDetailDish.text = Dishes.getDish(dishpos).name
+        imageDetailDish.setImageResource(Dishes.getDish(dishpos).image)
+        priceDishDetail.text = Dishes.getDish(dishpos).price.toString() + " €"
+        descriptionDetailDish.text = Dishes.getDish(dishpos).description
     }
 
 }

@@ -35,6 +35,7 @@ class tableDetailFragment : Fragment() {
     //Delegado
     interface OnDetailSelectedListener {
         fun onAddproduct(tablePos : Int)
+        fun onCheckBill(tablePos: Int)
     }
 
     private lateinit var root: View
@@ -69,6 +70,11 @@ class tableDetailFragment : Fragment() {
             root.findViewById<FloatingActionButton?>(R.id.floatButtonAddDish)?.setOnClickListener { v: View ->
 
                 onDetailSelectedListener?.onAddproduct(tablespos)
+            }
+
+            root.findViewById<FloatingActionButton?>(R.id.floatButtonBill)?.setOnClickListener { v: View ->
+
+                onDetailSelectedListener?.onCheckBill(tablespos)
             }
 
         }
@@ -133,17 +139,21 @@ class tableDetailFragment : Fragment() {
                 vh = view.tag as ListRowHolder
             }
 
-            //asignamos a la vista los calores
-            vh.nameDish.text = Tables[tablepos].dish[position].name
-            vh.imageDish.setImageResource(Tables[tablepos].dish[position].image)
-            vh.priceDish.text = Tables[tablepos].dish[position].price.toString() + " €"
+            // Se informan los datos del listado de platos
+            formatData(vh, position)
 
             return view!!
 
         }
 
+        private fun formatData(vh: ListRowHolder, position: Int) {
+            vh.nameDish.text = Tables[tablepos].dishes[position].name
+            vh.imageDish.setImageResource(Tables[tablepos].dishes[position].image)
+            vh.priceDish.text = Tables[tablepos].dishes[position].price.toString() + " €"
+        }
+
         override fun getItem(position: Int): Any {
-            return Tables[tablepos].dish[position]
+            return Tables[tablepos].dishes[position]
         }
 
         override fun getItemId(position: Int): Long = 0

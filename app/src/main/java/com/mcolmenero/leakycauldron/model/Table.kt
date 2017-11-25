@@ -4,17 +4,27 @@ import java.io.Serializable
 
 data class Table (var name: String) : Serializable {
 
-    var dish : MutableList<Dish> = arrayListOf()
+    var dishes : MutableList<Dish> = arrayListOf()
 
     // Método para obtener el nombre
     override fun toString() = name
 
 
     fun getDishesCount() : Int{
-        return dish?.size!!
+        return dishes?.size!!
     }
 
-    fun getDish(position : Int) : Dish{
-        return dish[position]
+    fun getTotalPrice() : Float {
+        var  totalPrice = 0.0f;
+
+        if (dishes.count() != 0) {
+
+            for (index in 0 until dishes.size) {
+                totalPrice += dishes[index].price
+            }
+
+        }
+
+        return totalPrice
     }
 }

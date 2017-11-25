@@ -81,7 +81,7 @@ class dishListActivity : AppCompatActivity() {
             val vh: ListRowHolder
 
 
-            val dishItem = Dishes.getDishItem(position)
+            val dishItem = Dishes.getDish(position)
 
             if (convertView == null) {
                 view = this.mInflator.inflate(R.layout.cell_dish_list, parent, false) //celda personalizada
@@ -147,7 +147,7 @@ class dishListActivity : AppCompatActivity() {
         }
 
         override fun getItem(position: Int): Any {
-            return Dishes.getDishItem(position)
+            return Dishes.getDish(position)
         }
 
         override fun getItemId(position: Int): Long = 0

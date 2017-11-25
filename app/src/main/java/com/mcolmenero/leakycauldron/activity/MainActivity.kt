@@ -55,4 +55,9 @@ class MainActivity : AppCompatActivity(), tableListFragment.OnTableSelectedListe
 
     }
 
+    override fun onCheckBill(tablePos: Int) {
+        val intent = checkBillActivity.intent(this, tablePos)
+        startActivity(intent)
+    }
+
 }

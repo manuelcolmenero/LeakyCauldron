@@ -26,6 +26,17 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatButtonBill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/detaultmargin"
+            android:layout_marginStart="@dimen/detaultmargin"
+            android:src="@android:drawable/checkbox_on_background"
+            app:backgroundTint="@color/colorPrimary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
     </android.support.constraint.ConstraintLayout>
 
 </FrameLayout>
