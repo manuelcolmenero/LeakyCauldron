@@ -4,5 +4,8 @@
     <string name="textTitleCell">Titulo de la celda</string>
     <string name="textImageCell">Imagen de la celda</string>
     <string name="textPriceCell">9999.99 €</string>
+    <string name="textDescriptionCell">Texto largo para el campo de descripción de la celda</string>
+
+    <string name="textAddButton">Añadir</string>
 
 </resources>

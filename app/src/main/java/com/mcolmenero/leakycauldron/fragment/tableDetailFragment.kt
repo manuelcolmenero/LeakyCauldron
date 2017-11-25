@@ -9,10 +9,13 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
+import android.widget.ImageView
 import android.widget.ListView
 import android.widget.TextView
 import com.mcolmenero.leakycauldron.R
+import com.mcolmenero.leakycauldron.model.Dishes
 import com.mcolmenero.leakycauldron.model.Tables
+import kotlinx.android.synthetic.main.activity_dish_detail.*
 
 
 class tableDetailFragment : Fragment() {
@@ -131,7 +134,9 @@ class tableDetailFragment : Fragment() {
             }
 
             //asignamos a la vista los calores
-            vh.titleCellDetail.text = Tables[tablepos].dish[position].name
+            vh.nameDish.text = Tables[tablepos].dish[position].name
+            vh.imageDish.setImageResource(Tables[tablepos].dish[position].image)
+            vh.priceDish.text = Tables[tablepos].dish[position].price.toString() + " €"
 
             return view!!
 
@@ -147,12 +152,17 @@ class tableDetailFragment : Fragment() {
 
         //Clase Holder
         internal class ListRowHolder(row: View?) {
-            public val titleCellDetail: TextView
+            val nameDish: TextView
+            val imageDish: ImageView
+            val priceDish: TextView
+
 
 
             init {
 
-                titleCellDetail = row?.findViewById(R.id.txtTitleCellDetail)!!
+                nameDish = row?.findViewById(R.id.nameTableDish)!!
+                imageDish = row?.findViewById(R.id.imageTableDish)!!
+                priceDish = row?.findViewById(R.id.priceTableDish)!!
 
             }
         }

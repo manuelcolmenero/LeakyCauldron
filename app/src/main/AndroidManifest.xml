@@ -18,10 +18,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.dishListActivity">
+        <activity android:name=".activity.dishListActivity" />
+        <activity android:name=".activity.dishDetailActivity" />
 
-        </activity>
+    </application>
 
-</application>
-
-    </manifest>
+</manifest>

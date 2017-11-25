@@ -19,6 +19,7 @@ import com.mcolmenero.leakycauldron.model.Dishes
 
 class dishListActivity : AppCompatActivity() {
 
+    // Se genera el intercambio de datos
     companion object {
         val ARG_TABLE = "ARG_TABLE"
 
@@ -30,28 +31,33 @@ class dishListActivity : AppCompatActivity() {
     }
 
     private lateinit var list: ListView
-    private var tablepos = 0 // Variable de la mesa con la que se está trabajando
+
+    // Variable de la mesa que se ha seleccionado
+    private var tablepos = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.fragment_dish_list)
 
-        //extraigo el parametro
+        // Se obtiene el parametro
         tablepos = intent.getIntExtra(ARG_TABLE, 0)
 
         list = findViewById(R.id.table_list_dish)
-        list.adapter = ListAdapter(this) //asignamos el adapter a la lista
+
+        // Se asigna el adapter
+        list.adapter = ListAdapter(this)
+
         //parametro con la mesa
         tablepos = intent.getIntExtra(ARG_TABLE, 0)
 
 
-//        // Nos enteramos de que se ha pulsado un elemento de la lista así:
-//        list.setOnItemClickListener { parent, view, position, id ->
-//
-//            //lanzamos el intent
-//            val intent = dishDetailActivity.intent(this, tablepos,position)
-//            startActivity(intent)
-//        }
+        // Se pulsa sobre un elemento de la lista
+        list.setOnItemClickListener { parent, view, position, id ->
+
+            //lanzamos el intent
+            val intent = dishDetailActivity.intent(this, tablepos,position)
+            startActivity(intent)
+        }
 
 
     }

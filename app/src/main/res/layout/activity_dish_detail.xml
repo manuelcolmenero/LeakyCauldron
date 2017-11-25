@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/nameDetailDish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/detaultmargin"
+            android:layout_marginStart="@dimen/detaultmargin"
+            android:layout_marginTop="@dimen/detaultmargin"
+            android:text="@string/textTitleCell"
+            android:textAlignment="center"
+            android:textSize="@dimen/fontTitleSize"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageDetailDish"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/detaultmargininter"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/textImageCell"
+            android:cropToPadding="true"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="@+id/nameDetailDish"
+            app:layout_constraintStart_toStartOf="@+id/nameDetailDish"
+            app:layout_constraintTop_toBottomOf="@+id/nameDetailDish"
+            app:srcCompat="@drawable/pollo" />
+
+        <TextView
+            android:id="@+id/priceDishDetail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/detaultmargininter"
+            android:contentDescription="@string/textPriceCell"
+            android:text="@string/textPriceCell"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/fontTitleSize"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/imageDetailDish"
+            app:layout_constraintStart_toStartOf="@+id/imageDetailDish"
+            app:layout_constraintTop_toBottomOf="@+id/imageDetailDish"
+            tools:text="@string/textPriceCell" />
+
+        <TextView
+            android:id="@+id/descriptionDetailDish"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/detaultmargininter"
+            android:contentDescription="@string/textDescriptionCell"
+            android:maxLines="6"
+            android:minLines="6"
+            android:text="@string/textDescriptionCell"
+            app:layout_constraintEnd_toEndOf="@+id/priceDishDetail"
+            app:layout_constraintStart_toStartOf="@+id/priceDishDetail"
+            app:layout_constraintTop_toBottomOf="@+id/priceDishDetail" />
+
+        <EditText
+            android:id="@+id/variantsDishDetail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/detaultmargininter"
+            android:contentDescription="@string/textDescriptionCell"
+            android:gravity="start"
+            android:selectAllOnFocus="false"
+            android:singleLine="false"
+            android:textAlignment="viewStart"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/descriptionDetailDish"
+            app:layout_constraintStart_toStartOf="@+id/descriptionDetailDish"
+            app:layout_constraintTop_toBottomOf="@+id/descriptionDetailDish" />
+
+        <Button
+            android:id="@+id/addDishDetail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/textAddButton"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/variantsDishDetail"
+            app:layout_constraintStart_toStartOf="@+id/variantsDishDetail"
+            app:layout_constraintTop_toBottomOf="@+id/variantsDishDetail" />
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
