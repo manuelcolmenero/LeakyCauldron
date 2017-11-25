@@ -15,6 +15,7 @@ class MainActivity : AppCompatActivity(), tableListFragment.OnTableSelectedListe
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+
         if (table_list_fragment != null) {
             if (fragmentManager.findFragmentById(R.id.table_list_fragment) == null) {
                 val fragment = tableListFragment.newInstance()
