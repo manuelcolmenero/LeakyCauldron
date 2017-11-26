@@ -30,10 +30,10 @@ los dispositivos actuales
 ### Portrait
 Listado mesas | Lista de platos de una mesa | Listado de platos completo | Detalle de un plato
 ------------ | ------------- | ------------- | -------------
-<img src = "https://github.com/manuelcolmenero/LeakyCauldron/tree/develop/screenshots/port/pantalla01.png" width="250px"> | <img src = "https://github.com/manuelcolmenero/LeakyCauldron/tree/develop/screenshots/port/pantalla02.png" width="250px"> | <img src = "https://github.com/manuelcolmenero/LeakyCauldron/tree/develop/screenshots/port/pantalla03.png" width="250px"> | <img src = "https://github.com/manuelcolmenero/LeakyCauldron/tree/develop/screenshots/port/pantalla04.png" width="250px">
+<img src = "https://github.com/manuelcolmenero/LeakyCauldron/blob/develop/screenshots/port/Pantalla01.png" width="250px"> | <img src = "https://github.com/manuelcolmenero/LeakyCauldron/tree/develop/screenshots/port/Pantalla02.png" width="250px"> | <img src = "https://github.com/manuelcolmenero/LeakyCauldron/tree/develop/screenshots/port/Pantalla03.png" width="250px"> | <img src = "https://github.com/manuelcolmenero/LeakyCauldron/tree/develop/screenshots/port/Pantalla04.png" width="250px">
 
 Menú del listado  | Factura 
 ------------ | ------------- 
-<img src = "https://github.com/manuelcolmenero/LeakyCauldron/tree/develop/screenshots/port/pantalla05.png" width="250px"> | <img src = "https://github.com/manuelcolmenero/LeakyCauldron/tree/develop/screenshots/port/pantalla06.png" width="250px"> 
+<img src = "https://github.com/manuelcolmenero/LeakyCauldron/tree/develop/screenshots/port/Pantalla05.png" width="250px"> | <img src = "https://github.com/manuelcolmenero/LeakyCauldron/tree/develop/screenshots/port/Pantalla06.png" width="250px"> 
 
 ### Landscape
