@@ -12,7 +12,6 @@ import android.widget.ListView
 import android.widget.TextView
 import android.widget.ViewSwitcher
 import com.mcolmenero.leakycauldron.R
-import com.mcolmenero.leakycauldron.model.Dish
 import com.mcolmenero.leakycauldron.model.Dishes.addDish
 import com.mcolmenero.leakycauldron.model.Dishes.dishes
 import com.mcolmenero.leakycauldron.model.Table
@@ -29,7 +28,7 @@ import java.util.*
 class tableListFragment : Fragment() {
 
     // Se crea un enumerado para las vistas del fragment (loading o lista de mesas)
-    enum class VIEW_INDEX (val index : Int){
+    enum class VIEW_INDEX(val index: Int) {
         LOADING(0),
         TABLES(1)
     }
@@ -120,7 +119,7 @@ class tableListFragment : Fragment() {
                 // Se asigna el adapter
                 list.adapter = ListAdapter(activity) //asignamos el adapter a la lista
 
-                /*// Se carga el primer registro en caso de estar en el modo tablet
+                // Se carga el primer registro en caso de estar en el modo tablet
                 if (root.findViewById<View>(R.id.table_detail) != null) {
                     // Se verifica si ya existe el fragment
                     if (fragmentManager.findFragmentById(R.id.table_detail) == null) {
@@ -129,7 +128,7 @@ class tableListFragment : Fragment() {
                                 .addToBackStack("")
                                 .commit()
                     }
-                }*/
+                }
 
             }
 
@@ -152,36 +151,36 @@ class tableListFragment : Fragment() {
 
 
             //recorrmeos cada plato.
-            for (dish in 0..data.length()-1) {
+            for (dish in 0..data.length() - 1) {
 
                 val dataMenu = data.getJSONObject(dish)
 
-                val name           = dataMenu.getString("name")
-                val image          = dataMenu.getInt("image")
-                val price          = dataMenu.getDouble ("price").toFloat()
-                val description    = dataMenu.getString("description")
-                val alg_gluten     = dataMenu.getInt("alg_gluten")
+                val name = dataMenu.getString("name")
+                val image = dataMenu.getInt("image")
+                val price = dataMenu.getDouble("price").toFloat()
+                val description = dataMenu.getString("description")
+                val alg_gluten = dataMenu.getInt("alg_gluten")
                 val alg_crustaceos = dataMenu.getInt("alg_crustaceos")
-                val alg_huevo      = dataMenu.getInt("alg_huevo")
-                val alg_pescado    = dataMenu.getInt("alg_pescado")
-                val alg_cacahuete  = dataMenu.getInt("alg_cacahuete")
-                val alg_soja       = dataMenu.getInt("alg_soja")
-                val alg_leche      = dataMenu.getInt("alg_leche")
-                val alg_frutsecos  = dataMenu.getInt("alg_frutsecos")
-                val alg_apio       = dataMenu.getInt("alg_apio")
-                val alg_mostaza    = dataMenu.getInt("alg_mostaza")
-                val alg_sesamo     = dataMenu.getInt("alg_sesamo")
-                val alg_sulfitos   = dataMenu.getInt("alg_sulfitos")
+                val alg_huevo = dataMenu.getInt("alg_huevo")
+                val alg_pescado = dataMenu.getInt("alg_pescado")
+                val alg_cacahuete = dataMenu.getInt("alg_cacahuete")
+                val alg_soja = dataMenu.getInt("alg_soja")
+                val alg_leche = dataMenu.getInt("alg_leche")
+                val alg_frutsecos = dataMenu.getInt("alg_frutsecos")
+                val alg_apio = dataMenu.getInt("alg_apio")
+                val alg_mostaza = dataMenu.getInt("alg_mostaza")
+                val alg_sesamo = dataMenu.getInt("alg_sesamo")
+                val alg_sulfitos = dataMenu.getInt("alg_sulfitos")
                 val alg_altramuces = dataMenu.getInt("alg_altramuces")
-                val alg_moluscos   = dataMenu.getInt("alg_moluscos")
-                val variant        = dataMenu.getString("variant")
+                val alg_moluscos = dataMenu.getInt("alg_moluscos")
+                val variant = dataMenu.getString("variant")
 
                 val iconResource = when (image) {
                     1 -> R.drawable.cerveza
                     2 -> R.drawable.pollo
                     3 -> R.drawable.salmon
                     4 -> R.drawable.hamburguesa
-                    else ->  R.drawable.cerveza
+                    else -> R.drawable.cerveza
                 }
 
                 //añado al singleton

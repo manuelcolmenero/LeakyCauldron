@@ -13,9 +13,7 @@ import android.widget.ImageView
 import android.widget.ListView
 import android.widget.TextView
 import com.mcolmenero.leakycauldron.R
-import com.mcolmenero.leakycauldron.model.Dishes
 import com.mcolmenero.leakycauldron.model.Tables
-import kotlinx.android.synthetic.main.activity_dish_detail.*
 
 
 class tableDetailFragment : Fragment() {
@@ -34,7 +32,7 @@ class tableDetailFragment : Fragment() {
 
     //Delegado
     interface OnDetailSelectedListener {
-        fun onAddproduct(tablePos : Int)
+        fun onAddproduct(tablePos: Int)
         fun onCheckBill(tablePos: Int)
     }
 
@@ -165,7 +163,6 @@ class tableDetailFragment : Fragment() {
             val nameDish: TextView
             val imageDish: ImageView
             val priceDish: TextView
-
 
 
             init {

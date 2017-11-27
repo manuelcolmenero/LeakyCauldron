@@ -29,25 +29,25 @@ class MainActivity : AppCompatActivity(), tableListFragment.OnTableSelectedListe
     // Cuando se pulsa en una de las mesas se lanza este evento para navegar al detalle
     override fun onTableSelected(table: Table?, position: Int) {
 
-         val fragment = tableDetailFragment.newInstance(position)
+        val fragment = tableDetailFragment.newInstance(position)
 
-         // Es tablet
-         if (findViewById<View>(R.id.table_detail) != null) {
-             fragmentManager.beginTransaction()
-                     .replace(R.id.table_detail, fragment)
-                     .commit()
-         } else {
-             fragmentManager.beginTransaction()
-                     .replace(R.id.table_list_fragment, fragment)
-                     .addToBackStack("")
-                     .commit()
-         }
+        // Es tablet
+        if (findViewById<View>(R.id.table_detail) != null) {
+            fragmentManager.beginTransaction()
+                    .replace(R.id.table_detail, fragment)
+                    .commit()
+        } else {
+            fragmentManager.beginTransaction()
+                    .replace(R.id.table_list_fragment, fragment)
+                    .addToBackStack("")
+                    .commit()
+        }
     }
 
     // Función que se ejecuta cuando se pulsa el botón flotante en la lista para añadir productos.
-    override fun onAddproduct(tablePos : Int) {
+    override fun onAddproduct(tablePos: Int) {
 
-      //lanzamos una actividad
+        //lanzamos una actividad
 
         val intent = dishListActivity.intent(this, tablePos)
         startActivity(intent)
