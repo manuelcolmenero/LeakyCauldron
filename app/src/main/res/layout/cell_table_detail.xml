@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/nameTableDish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/textTitleCell"
+            android:textAlignment="center"
+            android:textSize="@dimen/fontTitleSize"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageTableDish"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/imageDishListSize"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/textImageCell"
+            android:cropToPadding="false"
+            android:maxHeight="@dimen/imageDishListSize"
+            android:maxWidth="@dimen/imageDishListSize"
+            android:minHeight="@dimen/imageDishListSize"
+            android:minWidth="@dimen/imageDishListSize"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/pollo" />
+
+        <TextView
+            android:id="@+id/priceTableDish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/textPriceCell"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/fontTitleSize"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
