@@ -39,4 +39,8 @@ Menú del listado  | Factura
 ### Landscape
 Listado mesas | Listado de platos completo | Detalle de un plato
 ------------ | ------------- | -------------
-<img src = "https://github.com/manuelcolmenero/LeakyCauldron/blob/develop/screenshots/land/pantalla01.png" width="250px"> | <img src = "https://github.com/manuelcolmenero/LeakyCauldron/blob/develop/screenshots/land/pantalla02.png" width="250px"> | <img src = "https://github.com/manuelcolmenero/LeakyCauldron/blob/develop/screenshots/land/pantalla03a.png" width="250px"> <img src = "https://github.com/manuelcolmenero/LeakyCauldron/blob/develop/screenshots/land/Pantalla03b.png" width="250px">
+<img src = "https://github.com/manuelcolmenero/LeakyCauldron/blob/develop/screenshots/land/pantalla01.png" width="350px"> | <img src = "https://github.com/manuelcolmenero/LeakyCauldron/blob/develop/screenshots/land/pantalla02.png" width="350px"> | <img src = "https://github.com/manuelcolmenero/LeakyCauldron/blob/develop/screenshots/land/pantalla03a.png" width="350px"> <img src = "https://github.com/manuelcolmenero/LeakyCauldron/blob/develop/screenshots/land/pantalla03b.png" width="350px">
+
+ Factura 
+ ------------- 
+<img src = "https://github.com/manuelcolmenero/LeakyCauldron/blob/develop/screenshots/land/pantalla04.png" width="250px"> 
