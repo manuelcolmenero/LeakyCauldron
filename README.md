@@ -30,18 +30,18 @@ los dispositivos actuales
 ### Portrait
 Listado mesas | Lista de platos de una mesa | Listado de platos completo | Detalle de un plato
 ------------ | ------------- | ------------- | -------------
-<img src = "https://github.com/manuelcolmenero/LeakyCauldron/blob/develop/screenshots/port/Pantalla01.png" width="250px"> | <img src = "https://github.com/manuelcolmenero/LeakyCauldron/blob/develop/screenshots/port/Pantalla02.png" width="250px"> | <img src = "https://github.com/manuelcolmenero/LeakyCauldron/blob/develop/screenshots/port/Pantalla03.png" width="250px"> | <img src = "https://github.com/manuelcolmenero/LeakyCauldron/blob/develop/screenshots/port/Pantalla04.png" width="250px">
+<img src = "https://github.com/manuelcolmenero/LeakyCauldron/blob/master/screenshots/port/Pantalla01.png" width="250px"> | <img src = "https://github.com/manuelcolmenero/LeakyCauldron/blob/master/screenshots/port/Pantalla02.png" width="250px"> | <img src = "https://github.com/manuelcolmenero/LeakyCauldron/blob/master/screenshots/port/Pantalla03.png" width="250px"> | <img src = "https://github.com/manuelcolmenero/LeakyCauldron/blob/master/screenshots/port/Pantalla04.png" width="250px">
 
 Menú del listado  | Factura 
 ------------ | ------------- 
-<img src = "https://github.com/manuelcolmenero/LeakyCauldron/blob/develop/screenshots/port/Pantalla05.png" width="250px"> | <img src = "https://github.com/manuelcolmenero/LeakyCauldron/blob/develop/screenshots/port/Pantalla06.png" width="250px"> 
+<img src = "https://github.com/manuelcolmenero/LeakyCauldron/blob/master/screenshots/port/Pantalla05.png" width="250px"> | <img src = "https://github.com/manuelcolmenero/LeakyCauldron/blob/master/screenshots/port/Pantalla06.png" width="250px"> 
 
 ### Landscape
 Listado mesas | Listado de platos completo 
 ------------ | ------------- 
-<img src = "https://github.com/manuelcolmenero/LeakyCauldron/blob/develop/screenshots/land/pantalla01.png" width="350px"> | <img src = "https://github.com/manuelcolmenero/LeakyCauldron/blob/develop/screenshots/land/pantalla02.png" width="350px"> 
+<img src = "https://github.com/manuelcolmenero/LeakyCauldron/blob/master/screenshots/land/pantalla01.png" width="350px"> | <img src = "https://github.com/manuelcolmenero/LeakyCauldron/blob/master/screenshots/land/pantalla02.png" width="350px"> 
 
 
 Detalle de un plato |  Factura 
 ------------ | -------------
-<img src = "https://github.com/manuelcolmenero/LeakyCauldron/blob/develop/screenshots/land/pantalla03a.png" width="350px"> <img src = "https://github.com/manuelcolmenero/LeakyCauldron/blob/develop/screenshots/land/pantalla03b.png" width="350px"> | <img src = "https://github.com/manuelcolmenero/LeakyCauldron/blob/develop/screenshots/land/pantalla04.png" width="350px"> 
+<img src = "https://github.com/manuelcolmenero/LeakyCauldron/blob/master/screenshots/land/pantalla03a.png" width="350px"> <img src = "https://github.com/manuelcolmenero/LeakyCauldron/blob/master/screenshots/land/pantalla03b.png" width="350px"> | <img src = "https://github.com/manuelcolmenero/LeakyCauldron/blob/master/screenshots/land/pantalla04.png" width="350px"> 
